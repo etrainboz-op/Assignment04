@@ -8,6 +8,7 @@ This page is made to show the difference between formatting integers, floats, an
 
 ### C99 printf
 
+<pre>
 '''c
 #include <stdio.h>
 int main()
@@ -18,10 +19,11 @@ int main()
     printf("%05d\n", n); // width 5, pad with zeros
     return 0;
 }
+<pre>
 
-'''markdown
 ### Python print
 
+<pre>
 '''python
 // Old-style
 n = 85
@@ -34,4 +36,4 @@ n = 85
 print(f"{n:5}") # width 5, right-aligned
 print(f"{n:+5}") # width 5, show sign
 print(f"{n:05}") # width 5, pad with zeros
-
+<pre>
