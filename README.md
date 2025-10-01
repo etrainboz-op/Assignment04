@@ -1,12 +1,18 @@
 # Welcome to Assignment 04
-This is my first GitHub pages project.
+___
 
 ## Introduction Paragraph
+---
+
 This page is made to show the difference between formatting integers, floats, and strings in languages Python and C.
 
+![Photo](https://tutorpython.com/wp-content/uploads/2022/12/Python-vs-C-Big-600x266.jpg)
+
 ## Integer Formatting
+---
 
 ### C99 printf
+***
 
 ```c
 #include <stdio.h>
@@ -21,6 +27,7 @@ int main()
 ```
 
 ### Python print
+***
 
 ```python
 # Old-style
@@ -37,8 +44,10 @@ print(f"{n:05}") # width 5, pad with zeros
 ```
 
 ## Float Formatting
+---
 
 ### C99 printf
+***
 
 ```c
 #include <stdio.h>
@@ -53,6 +62,7 @@ int main()
 ```
 
 ### Python print
+***
 
 ```python
 # Old-style
@@ -69,8 +79,10 @@ print(f"{f:e}") # scientific notation
 ```
 
 ## String Formatting
+---
 
 ### C99 printf
+***
 
 ```c
 #include <stdio.h>
@@ -84,6 +96,7 @@ int main()
 ```
 
 ### Python print
+***
 
 ```python
 # Old-style
@@ -99,6 +112,7 @@ print(f"{s:^10}!") # centered
 ```
 
 ## Comparison Table
+---
 
 |  Type  |      Example Code (C)      |  Example Code (Python)  |    Output    |
 |:-------|:---------------------------|:------------------------|:-------------|
@@ -111,7 +125,27 @@ print(f"{s:^10}!") # centered
 | string | `printf("%10s!", "Hello");`|    `"%10s!" % "Hello"`  |   `Hello!`   |
 
 ## Useful Links
+---
 
 [C99 printf formatting](https://en.cppreference.com/w/c/io/fprintf)
+
 [Python Old-style formatting](https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting)
+
 [Python f-strings formatting]( https://docs.python.org/3/reference/lexical_analysis.html#f-strings)
+
+## Formatting Summary
+---
+
+### C99 Formatting:
+***
+
+- Use `%d` for integers, `%f` for floats, and `%s` for strings.
+- Use `%05d` and  `%-10s` for width and padding.
+- Use `%e` for scientific notation.
+
+### Python Formatting:
+***
+
+- Use `%d`, `%f`, and `%s` for old-style formatting.
+- Use f-strings for cleaner modern syntax: `f"{value:format}"`.
+- Use `<`, `>`, and `^` for left, right, center alignment.
