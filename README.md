@@ -2,7 +2,6 @@
 ___
 
 ## Introduction Paragraph
----
 
 This page is made to show the difference between formatting integers, floats, and strings in languages Python and C.
 
@@ -12,7 +11,6 @@ This page is made to show the difference between formatting integers, floats, an
 ---
 
 ### C99 printf
-***
 
 ```c
 #include <stdio.h>
@@ -27,7 +25,6 @@ int main()
 ```
 
 ### Python print
-***
 
 ```python
 # Old-style
@@ -47,7 +44,6 @@ print(f"{n:05}") # width 5, pad with zeros
 ---
 
 ### C99 printf
-***
 
 ```c
 #include <stdio.h>
@@ -62,7 +58,6 @@ int main()
 ```
 
 ### Python print
-***
 
 ```python
 # Old-style
@@ -82,7 +77,6 @@ print(f"{f:e}") # scientific notation
 ---
 
 ### C99 printf
-***
 
 ```c
 #include <stdio.h>
@@ -96,7 +90,6 @@ int main()
 ```
 
 ### Python print
-***
 
 ```python
 # Old-style
@@ -137,14 +130,12 @@ print(f"{s:^10}!") # centered
 ---
 
 ### C99 Formatting:
-***
 
 - Use `%d` for integers, `%f` for floats, and `%s` for strings.
 - Use `%05d` and  `%-10s` for width and padding.
 - Use `%e` for scientific notation.
 
 ### Python Formatting:
-***
 
 - Use `%d`, `%f`, and `%s` for old-style formatting.
 - Use f-strings for cleaner modern syntax: `f"{value:format}"`.
