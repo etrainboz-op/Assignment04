@@ -1,7 +1,7 @@
 # Welcome to Assignment 04
 This is my first GitHub pages project.
 
-## Introduction paragraph
+## Introduction Paragraph
 This page is made to show the difference between formatting integers, floats, and strings in languages Python and C.
 
 ## Integer Formatting
@@ -23,13 +23,13 @@ int main()
 ### Python print
 
 ```python
-// Old-style
+# Old-style
 n = 85
 print("%5d" % n) # width 5, right-aligned
 print("%+5d" % n) # width 5, show sign
 print("%05d" % n) # width 5, pad with zeros
 
-// F-strings
+# F-strings
 n = 85
 print(f"{n:5}") # width 5, right-aligned
 print(f"{n:+5}") # width 5, show sign
@@ -55,13 +55,13 @@ int main()
 ### Python print
 
 ```python
-// Old-style
+# Old-style
 f = 7.25743
 print("%8.2f" % f) # width 8, 2 decimals
 print("%08.2f" % f) # pad with zeros
 print("%e" % f) # scientific notation
 
-// F-strings
+# F-strings
 f = 7.25743
 print(f"{f:8.2f}") # width 8, 2 decimals
 print(f"{f:08.2f}") # pad with zeros
@@ -86,14 +86,32 @@ int main()
 ### Python print
 
 ```python
-// Old-style
+# Old-style
 s = "Hello"
 print("%-10s!" % s) # left-aligned, width 10
 print("%10s!" % s) # right-aligned, width 10
 
-// F-strings
+# F-strings
 s = "Hello"
 print(f"{s:<10}!") # left-aligned
 print(f"{s:>10}!") # right-aligned
 print(f"{s:^10}!") # centered
 ```
+
+## Comparison Table
+
+|  Type  |      Example Code (C)      |  Example Code (Python)  |    Output    |
+|:-------|:---------------------------|:------------------------|:-------------|
+| int    |    `printf("%5d", 85);`    |       `"%5d" % 85`      |     `85`     |
+| int    |   `printf("%+5d", 85);`    |      `"%+5d" % 85`      |    `+85`     |
+| int    |   `printf("%05d", 85);`    |      `"%05d" % 85`      |   `00085`    |
+| float  |  `printf("%8.2f", 7.25);`  |    `"%8.2f" % 7.25`     |    `7.25`    |
+| float  |    `printf("%e", 7.25);`   |      `"%e" % 7.25`      |`7.250000e+00`|
+| string |`printf("%-10s!", "Hello");`|   `"%-10s!" % "Hello"`  |   `Hello !`  |
+| string | `printf("%10s!", "Hello");`|    `"%10s!" % "Hello"`  |   `Hello!`   |
+
+## Useful Links
+
+[C99 printf formatting](https://en.cppreference.com/w/c/io/fprintf)
+[Python Old-style formatting](https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting)
+[Python f-strings formatting]( https://docs.python.org/3/reference/lexical_analysis.html#f-strings)
