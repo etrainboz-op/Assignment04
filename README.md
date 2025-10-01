@@ -8,7 +8,6 @@ This page is made to show the difference between formatting integers, floats, an
 
 ### C99 printf
 
-<pre> 
 ```c
 #include <stdio.h>
 int main()
@@ -20,11 +19,9 @@ int main()
     return 0;
 }
 ```
-</pre>
 
 ### Python print
 
-<pre>
 ```python
 // Old-style
 n = 85
@@ -38,29 +35,25 @@ print(f"{n:5}") # width 5, right-aligned
 print(f"{n:+5}") # width 5, show sign
 print(f"{n:05}") # width 5, pad with zeros
 ```
-</pre>
 
 ## Float Formatting
 
 ### C99 printf
 
-<pre> 
 ```c
 #include <stdio.h>
 int main()
 {
     float f = 7.25743;
     printf("%8.2f\n", f); // width 8, 2 decimals
-    printf("%08.2\n", f); // pad with zeros
+    printf("%08.2f\n", f); // pad with zeros
     printf("%e\n", f); // scientific notation
     return 0;
 }
 ```
-</pre>
 
 ### Python print
 
-<pre>
 ```python
 // Old-style
 f = 7.25743
@@ -74,28 +67,24 @@ print(f"{f:8.2f}") # width 8, 2 decimals
 print(f"{f:08.2f}") # pad with zeros
 print(f"{f:e}") # scientific notation
 ```
-</pre>
 
 ## String Formatting
 
 ### C99 printf
 
-<pre> 
 ```c
 #include <stdio.h>
 int main()
 {
     char *s = "Hello";
-    printf(%-10s!\n", s); // left-aligned, width 10
-    printf(%10s!\n", s); // right-aligned, width 10
+    printf("%-10s!\n", s); // left-aligned, width 10
+    printf("%10s!\n", s); // right-aligned, width 10
     return 0;
 }
 ```
-</pre>
 
 ### Python print
 
-<pre>
 ```python
 // Old-style
 s = "Hello"
@@ -108,4 +97,3 @@ print(f"{s:<10}!") # left-aligned
 print(f"{s:>10}!") # right-aligned
 print(f"{s:^10}!") # centered
 ```
-</pre>"
